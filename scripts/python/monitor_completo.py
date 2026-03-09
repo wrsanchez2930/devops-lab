@@ -38,3 +38,4 @@ for srv in config["servidores"]:
     caidos += 1
 
 log(f"--- Resumen: {activos} activos, {caidos} caídos ---")
+# v1.1 — agregado resumen final
