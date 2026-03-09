@@ -1,0 +1,7 @@
+*.log
+*.tar.gz
+backups/
+.env
+*.key
+__pycache__/
+*.pyc
