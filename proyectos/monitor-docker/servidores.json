@@ -1,0 +1,8 @@
+{
+  "proyecto": "devops-lab",
+  "servidores": [
+    {"ip": "192.168.1.7", "nombre": "netbox-vm", "rol": "produccion"},
+    {"ip": "8.8.8.8", "nombre": "google-dns", "rol": "externo"}
+  ],
+  "intervalo_segundos": 60
+}
