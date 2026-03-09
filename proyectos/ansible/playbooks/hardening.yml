@@ -1,0 +1,35 @@
+---
+- name: Hardening básico de seguridad
+  hosts: local
+  become: true
+
+  tasks:
+    - name: Actualizar cache de paquetes
+      ansible.builtin.apt:
+        update_cache: true
+        cache_valid_time: 3600
+
+    - name: Instalar herramientas esenciales
+      ansible.builtin.apt:
+        name:
+          - ufw
+          - fail2ban
+          - unattended-upgrades
+        state: present
+
+    - name: Configurar SSH — deshabilitar root login
+      ansible.builtin.lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^#?PermitRootLogin'
+        line: 'PermitRootLogin no'
+      notify: Restart SSH
+
+    - name: Permitir SSH en UFW
+      ansible.builtin.command:
+        cmd: ufw allow 22/tcp
+
+  handlers:
+    - name: Restart SSH
+      ansible.builtin.service:
+        name: ssh
+        state: restarted

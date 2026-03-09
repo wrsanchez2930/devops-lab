@@ -1,0 +1,36 @@
+---
+- name: Desplegar monitor de Netbox como cron
+  hosts: local
+  become: false
+
+  vars:
+    script_dest: /home/vboxuser/devops/scripts/python/netbox_reporte.py
+    log_dir: /home/vboxuser/devops/logs
+
+  tasks:
+    - name: Verificar que el script existe
+      ansible.builtin.stat:
+        path: "{{ script_dest }}"
+      register: script_stat
+
+    - name: Asegurar directorio de logs
+      ansible.builtin.file:
+        path: "{{ log_dir }}"
+        state: directory
+        mode: '0755'
+
+    - name: Ejecutar el script ahora (test)
+      ansible.builtin.command:
+        cmd: python3 {{ script_dest }}
+      register: resultado
+
+    - name: Mostrar resultado
+      ansible.builtin.debug:
+        msg: "{{ resultado.stdout }}"
+
+    - name: Configurar cron — cada hora
+      ansible.builtin.cron:
+        name: "netbox reporte horario"
+        minute: "0"
+        hour: "*"
+        job: "python3 {{ script_dest }} >> {{ log_dir }}/netbox_reporte.log 2>&1"

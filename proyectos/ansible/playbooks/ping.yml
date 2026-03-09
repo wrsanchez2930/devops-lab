@@ -1,0 +1,16 @@
+---
+- name: Verificar conectividad con todos los hosts
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: Ping a todos los hosts
+      ansible.builtin.ping:
+
+    - name: Mostrar hostname del servidor
+      ansible.builtin.command: hostname
+      register: resultado
+
+    - name: Imprimir hostname
+      ansible.builtin.debug:
+        msg: "Servidor: {{ resultado.stdout }}"
