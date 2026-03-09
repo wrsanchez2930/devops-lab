@@ -1,0 +1,80 @@
+{
+  "generado": "2026-03-09T20:44:49.277403",
+  "total": 9,
+  "activos": 9,
+  "inactivos": 0,
+  "dispositivos": [
+    {
+      "nombre": "AGG-YUMBO-NE40-01",
+      "estado": "active",
+      "ip": "10.10.0.3/24",
+      "sitio": "CPD Yumbo – Edificio Celsia",
+      "rol": "Transporte",
+      "fabricante": "Huawei"
+    },
+    {
+      "nombre": "CORE-IBAGUE-NE40-01",
+      "estado": "active",
+      "ip": "10.30.0.2/24",
+      "sitio": "CPD Ibagué – Subestación El Papayo",
+      "rol": "Core",
+      "fabricante": "Juniper"
+    },
+    {
+      "nombre": "CORE-YUMBO-MX480-01",
+      "estado": "active",
+      "ip": "10.10.0.2/24",
+      "sitio": "CPD Yumbo – Edificio Celsia",
+      "rol": "Core",
+      "fabricante": "Juniper"
+    },
+    {
+      "nombre": "FW-IBAGUE-01",
+      "estado": "active",
+      "ip": "10.30.0.1/24",
+      "sitio": "CPD Ibagué – Subestación El Papayo",
+      "rol": "Firewall",
+      "fabricante": "Fortinet"
+    },
+    {
+      "nombre": "FW-YUMBO-01",
+      "estado": "active",
+      "ip": "10.10.0.1/24",
+      "sitio": "CPD Yumbo – Edificio Celsia",
+      "rol": "Firewall",
+      "fabricante": "Fortinet"
+    },
+    {
+      "nombre": "MPLS-BRI-01",
+      "estado": "active",
+      "ip": "10.40.0.2/24",
+      "sitio": "Brisas",
+      "rol": "Transporte",
+      "fabricante": "Huawei"
+    },
+    {
+      "nombre": "MPLS-JAM-01",
+      "estado": "active",
+      "ip": "10.20.0.2/24",
+      "sitio": "Jamundí115",
+      "rol": "Transporte",
+      "fabricante": "Huawei"
+    },
+    {
+      "nombre": "OLT-BRI-01",
+      "estado": "active",
+      "ip": "10.40.0.1/24",
+      "sitio": "Brisas",
+      "rol": "OLT",
+      "fabricante": "Huawei"
+    },
+    {
+      "nombre": "OLT-JAM-01",
+      "estado": "active",
+      "ip": "10.20.0.1/24",
+      "sitio": "Jamundí115",
+      "rol": "OLT",
+      "fabricante": "Huawei"
+    }
+  ]
+}

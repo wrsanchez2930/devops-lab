@@ -1,4 +1,3 @@
-version: '3.8'
 services:
   n8n:
     image: n8nio/n8n:latest
@@ -13,7 +12,10 @@ services:
       - N8N_HOST=0.0.0.0
       - GENERIC_TIMEZONE=America/Bogota
       - N8N_SECURE_COOKIE=false
+      - N8N_RUNNERS_ENABLED=true
+      - EXECUTIONS_PROCESS=main
     volumes:
       - n8n_data:/home/node/.n8n
+      - ./files:/files
 volumes:
   n8n_data:
