@@ -111,3 +111,25 @@ def recibir_alerta(alerta: Alerta):
 @app.get("/webhook/alertas", tags=["webhook"])
 def ver_alertas():
   return {"total": len(alertas_recibidas), "alertas": alertas_recibidas}
+
+# ---- IA con Ollama ----
+class Pregunta(BaseModel):
+  pregunta: str
+  modelo: Optional[str] = "tinyllama"
+
+@app.post("/ai/analyze", tags=["ai"])
+def analizar_con_ia(q: Pregunta):
+  try:
+    with open(REPORTE) as f: datos = json_lib.load(f)
+    inventario = ", ".join([d["nombre"] for d in datos["dispositivos"]])
+  except: inventario = "no disponible"
+
+  prompt = f"""You are a network engineer assistant.
+Network inventory: {inventario}
+Question: {q.pregunta}
+Answer concisely:"""
+
+  r = req.post("http://127.0.0.1:11434/api/generate",
+    json={"model": q.modelo, "prompt": prompt, "stream": False},
+    timeout=300)
+  return {"respuesta": r.json()["response"], "modelo": q.modelo}
