@@ -1,0 +1,380 @@
+{
+  "timestamp": "2026-03-17T11:49:15.595088",
+  "librenms": {
+    "total": 1019,
+    "up": 970,
+    "down": 49,
+    "por_tipo": {
+      "ne8000": {
+        "total": 26,
+        "up": 26,
+        "down": 0
+      },
+      "s6730": {
+        "total": 25,
+        "up": 25,
+        "down": 0
+      },
+      "bras": {
+        "total": 3,
+        "up": 3,
+        "down": 0
+      },
+      "olt": {
+        "total": 62,
+        "up": 62,
+        "down": 0
+      },
+      "firewall": {
+        "total": 1,
+        "up": 1,
+        "down": 0
+      },
+      "core": {
+        "total": 5,
+        "up": 5,
+        "down": 0
+      }
+    },
+    "alertas": {
+      "criticas": 70,
+      "warnings": 0
+    },
+    "dispositivos_down": [
+      {
+        "nombre": "100.64.250.14",
+        "ip": "100.64.250.14"
+      },
+      {
+        "nombre": "100.64.250.19",
+        "ip": "100.64.250.19"
+      },
+      {
+        "nombre": "100.64.250.38",
+        "ip": "100.64.250.38"
+      },
+      {
+        "nombre": "100.64.250.46",
+        "ip": "100.64.250.46"
+      },
+      {
+        "nombre": "100.64.250.61",
+        "ip": "100.64.250.61"
+      },
+      {
+        "nombre": "100.64.250.72",
+        "ip": "100.64.250.72"
+      },
+      {
+        "nombre": "100.64.250.73",
+        "ip": "100.64.250.73"
+      },
+      {
+        "nombre": "100.64.250.74",
+        "ip": "100.64.250.74"
+      },
+      {
+        "nombre": "100.64.250.75",
+        "ip": "100.64.250.75"
+      },
+      {
+        "nombre": "100.64.250.89",
+        "ip": "100.64.250.89"
+      },
+      {
+        "nombre": "100.64.84.183",
+        "ip": "100.64.84.183"
+      },
+      {
+        "nombre": "100.65.252.113",
+        "ip": "100.65.252.113"
+      },
+      {
+        "nombre": "100.65.252.117",
+        "ip": "100.65.252.117"
+      },
+      {
+        "nombre": "100.65.252.127",
+        "ip": "100.65.252.127"
+      },
+      {
+        "nombre": "100.65.252.187",
+        "ip": "100.65.252.187"
+      },
+      {
+        "nombre": "100.65.252.21",
+        "ip": "100.65.252.21"
+      },
+      {
+        "nombre": "100.65.252.24",
+        "ip": "100.65.252.24"
+      },
+      {
+        "nombre": "100.65.252.3",
+        "ip": "100.65.252.3"
+      },
+      {
+        "nombre": "100.65.252.38",
+        "ip": "100.65.252.38"
+      },
+      {
+        "nombre": "100.65.252.41",
+        "ip": "100.65.252.41"
+      },
+      {
+        "nombre": "100.65.252.50",
+        "ip": "100.65.252.50"
+      },
+      {
+        "nombre": "100.65.252.60",
+        "ip": "100.65.252.60"
+      },
+      {
+        "nombre": "100.65.252.98",
+        "ip": "100.65.252.98"
+      },
+      {
+        "nombre": "100.65.252.99",
+        "ip": "100.65.252.99"
+      },
+      {
+        "nombre": "100.65.253.136",
+        "ip": "100.65.253.136"
+      },
+      {
+        "nombre": "100.65.253.153",
+        "ip": "100.65.253.153"
+      },
+      {
+        "nombre": "100.65.253.170",
+        "ip": "100.65.253.170"
+      },
+      {
+        "nombre": "100.65.253.187",
+        "ip": "100.65.253.187"
+      },
+      {
+        "nombre": "100.65.253.246",
+        "ip": "100.65.253.246"
+      },
+      {
+        "nombre": "100.65.254.11",
+        "ip": "100.65.254.11"
+      }
+    ],
+    "trafico_mpls": [
+      {
+        "nombre": "yumbo-ne8000-m8-1",
+        "ip": "10.236.254.1",
+        "top_interfaces": [
+          {
+            "nombre": "Eth-Trunk2",
+            "in_gbps": 69.55,
+            "out_gbps": 15.53,
+            "alias": "CI_SW_DISTRI_YUMBO-BRAS1"
+          },
+          {
+            "nombre": "100GE0/4/0",
+            "in_gbps": 18.92,
+            "out_gbps": 3.86,
+            "alias": "To CI_LACP_SW_DISTRI_YUMBO-BRAS1-100GE6/0/7"
+          },
+          {
+            "nombre": "100GE0/6/1",
+            "in_gbps": 17.2,
+            "out_gbps": 4.14,
+            "alias": "To CI_LACP_SW_DISTRI_YUMBO-BRAS1-100GE6/0/5"
+          }
+        ]
+      },
+      {
+        "nombre": "recreo-ne8000_m8",
+        "ip": "10.236.254.10",
+        "top_interfaces": [
+          {
+            "nombre": "Eth-Trunk4",
+            "in_gbps": 35.48,
+            "out_gbps": 11.01,
+            "alias": "hacia PALMASECA-NE8000_LACP2x100G-100G0/4/1-0/3/1"
+          },
+          {
+            "nombre": "100GE0/6/0",
+            "in_gbps": 19.88,
+            "out_gbps": 6.15,
+            "alias": "TO PALMASECA-NE8000_100G0/3/1"
+          },
+          {
+            "nombre": "100GE0/4/1",
+            "in_gbps": 17.71,
+            "out_gbps": 5.5,
+            "alias": "TO PALMASECA-NE8000_100G0/4/1"
+          }
+        ]
+      },
+      {
+        "nombre": "palmaseca-ne8000_m8",
+        "ip": "10.236.254.11",
+        "top_interfaces": [
+          {
+            "nombre": "Eth-Trunk3",
+            "in_gbps": 35.52,
+            "out_gbps": 11.01,
+            "alias": "hacia TERMOYUMBO-NE8000_LACP2x100G-100G0/3/0-0/6/0"
+          },
+          {
+            "nombre": "100GE0/3/0",
+            "in_gbps": 17.29,
+            "out_gbps": 5.28,
+            "alias": "TO TERMOYUMBO-2x100G-NE8000_100G0/3/1"
+          },
+          {
+            "nombre": "100GE0/6/0",
+            "in_gbps": 17.29,
+            "out_gbps": 5.28,
+            "alias": "TO TERMOYUMBO-2x100G-NE8000_100G0/4/0"
+          }
+        ]
+      },
+      {
+        "nombre": "buga115-ne8000-m8",
+        "ip": "10.236.254.12",
+        "top_interfaces": [
+          {
+            "nombre": "100GE0/6/1",
+            "in_gbps": 33.3,
+            "out_gbps": 7.95,
+            "alias": "To VIJES_115-M8-100GE0/4/1"
+          },
+          {
+            "nombre": "100GE0/6/0",
+            "in_gbps": 4.95,
+            "out_gbps": 20.9,
+            "alias": "Hacia TULUA_115-M8-100GE0/3/0"
+          },
+          {
+            "nombre": "100GE0/3/1",
+            "in_gbps": 2.95,
+            "out_gbps": 12.33,
+            "alias": "hacia MORRO_NE8000-M8-100GE0/6/0"
+          }
+        ]
+      },
+      {
+        "nombre": "vijes-ne8000_m8",
+        "ip": "10.236.254.13",
+        "top_interfaces": [
+          {
+            "nombre": "100GE0/4/0",
+            "in_gbps": 33.89,
+            "out_gbps": 8.04,
+            "alias": "To SAN_MARCOS-M8-100GE0/6/1"
+          },
+          {
+            "nombre": "100GE0/4/1",
+            "in_gbps": 8.03,
+            "out_gbps": 33.88,
+            "alias": "To BUGA115-M8-100GE0/6/1"
+          }
+        ]
+      },
+      {
+        "nombre": "amaime-ne8000_m6",
+        "ip": "10.236.254.14",
+        "top_interfaces": []
+      },
+      {
+        "nombre": "pance-ne8000_m8",
+        "ip": "10.236.254.17",
+        "top_interfaces": [
+          {
+            "nombre": "100GE0/3/1",
+            "in_gbps": 28.83,
+            "out_gbps": 2.74,
+            "alias": "Hacia CHIPICHAPE-M8-100GE0/3/0"
+          },
+          {
+            "nombre": "100GE0/3/0",
+            "in_gbps": 2.73,
+            "out_gbps": 28.8,
+            "alias": "Hacia SAN_ISIDRO-M8-100GE0/3/1"
+          }
+        ]
+      },
+      {
+        "nombre": "san_isidro-ne8000_m8",
+        "ip": "10.236.254.18",
+        "top_interfaces": [
+          {
+            "nombre": "100GE0/3/1",
+            "in_gbps": 29.88,
+            "out_gbps": 2.84,
+            "alias": "Hacia PANCE-M8-100GE0/3/0"
+          },
+          {
+            "nombre": "100GE0/3/0",
+            "in_gbps": 1.4,
+            "out_gbps": 22.89,
+            "alias": "Hacia RIO_JAMUNDI-M8-100GE0/3/1"
+          },
+          {
+            "nombre": "Eth-Trunk2",
+            "in_gbps": 1.15,
+            "out_gbps": 6.08,
+            "alias": "WAN-OLT-SAN_ISIDRO"
+          }
+        ]
+      },
+      {
+        "nombre": "rio_jamundi-ne8000_m8",
+        "ip": "10.236.254.19",
+        "top_interfaces": [
+          {
+            "nombre": "100GE0/3/1",
+            "in_gbps": 25.71,
+            "out_gbps": 1.66,
+            "alias": "Hacia SAN_ISIDRO-M8-100GE0/3/0"
+          },
+          {
+            "nombre": "100GE0/3/0",
+            "in_gbps": 1.62,
+            "out_gbps": 25.62,
+            "alias": "Hacia ZONAMERICAI_CI-S6730A-100GE0/0/1"
+          },
+          {
+            "nombre": "Eth-Trunk1",
+            "in_gbps": 0.03,
+            "out_gbps": 0.06,
+            "alias": "WAN-OLT-RIO_JAMUNDI"
+          }
+        ]
+      },
+      {
+        "nombre": "jamundi_115-ne8000_m8",
+        "ip": "10.236.254.20",
+        "top_interfaces": [
+          {
+            "nombre": "100GE0/3/1",
+            "in_gbps": 22.34,
+            "out_gbps": 1.35,
+            "alias": "Hacia RIO-JAMUNDI-M8-100GE0/3/0"
+          },
+          {
+            "nombre": "Eth-Trunk2",
+            "in_gbps": 1.1,
+            "out_gbps": 5.24,
+            "alias": "OLT1-JAMUNDI115"
+          },
+          {
+            "nombre": "Eth-Trunk1",
+            "in_gbps": 0.16,
+            "out_gbps": 0.99,
+            "alias": "OLT2-JAMUNDI_115"
+          }
+        ]
+      }
+    ]
+  },
+  "phpipam": {
+    "total_subredes": 1066
+  }
+}
